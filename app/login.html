@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Teste - Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <input id="email" placeholder="Email"/>
+    <input id="senha" type="password" placeholder="Senha"/>
+    <button id="btnLogin">Entrar</button>
+    <p id="mensagem"></p>
+
+    <script>
+        document.getElementById("btnLogin").onclick = function () {
+            const email = document.getElementById("email").value;
+            const senha = document.getElementById("senha").value;
+
+            if(email ==="teste@gmail.com" && senha === "sm1243") {
+                document.getElementById("mensagem").innerText = "Seja bem-vindo!";
+            }
+            else{
+                document.getElementById("mensagem").innerText = "Erro";
+            }
+        };
+    </script>
+</body>
+</html>
